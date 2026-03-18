@@ -14,8 +14,11 @@ def euclid_distance(x1, y1, x2, y2):
     return d
 def has_intersection(circle_1, circle_2):
     if d > rad:
-
-    its =
+        its = 0
+    if d == rad:
+        its = 1
+    if d < rad:
+        its = 2
     return("intersects": its)
 
 # {"intersects": True, "intersections_count": 2}
